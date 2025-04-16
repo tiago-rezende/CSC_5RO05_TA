@@ -9,7 +9,7 @@ Enfin, il suffit de l’exécuter directement sur la Raspberry Pi.
 Pour chaque fichier principal, la compilation suit la forme suivante :
 
 
-réponse aux questions
+# réponse aux questions
 
 
 2 c : Les méthodes qui ne modifient pas l'état de l'objet, comme `getSample()`, peuvent être déclarées `const`. Les variables `dostop` et `iLoop` doivent être déclarées `volatile` pour garantir un accès correct lors des interruptions asynchrones, comme les signaux. Cela empêche les optimisations du compilateur qui pourraient ignorer les modifications externes. Sans `volatile`, la boucle pourrait mal se comporter si les variables sont modifiées par un signal pendant son exécution. 
